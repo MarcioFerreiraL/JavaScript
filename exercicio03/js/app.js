@@ -1,5 +1,10 @@
 function evento1() {
-    document.body.style.background = 'yellow';
+    let primeiroBotao = document.getElementById("primeiroBotao")
+    primeiroBotao.style.background = 'yellow';
+    let lista = ['Um', 'Dois', 'Três'];
+    alert("a lista é: " + lista)
+    console.log(lista.length);
+    console.log(Array.isArray(lista));
 }
 function evento2() {
     document.body.style.background = 'green';
@@ -16,7 +21,7 @@ function evento5() {
 }
 function add() {
     let texto = document.getElementById("Teste");
-    texto.append('cu <br>');
+    texto.append('a <br>');
 }
 function normal() {
     let button = document.getElementById("Teste")
