@@ -27,3 +27,11 @@ function normal() {
     let button = document.getElementById("Teste")
     button.style.background = '#ccc';
 }
+
+var numeros = [
+    'Roxo',
+    'Preto',
+    'Branco'
+]
+numeros.sort()
+document.getElementById("Text").innerHTML = numeros.join(' - ');
