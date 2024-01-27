@@ -48,3 +48,24 @@ if (18 > hora > 12) {
 } else {
     document.getElementById("Text").innerHTML = 'Bom dia!';
 }
+function verificarCor() {
+    let color = (document.getElementById('cor').value).toLowerCase();
+    let mexer = document.getElementById('cor');
+    switch (color) {
+        case 'azul':
+            mexer.style.borderColor = 'Blue';
+            mexer.style.color = 'Blue';
+            break
+        case 'vermelho':
+            mexer.style.borderColor = 'Red';
+            mexer.style.color = 'Red';
+            break
+        case 'verde':
+            mexer.style.borderColor = 'Green';
+            mexer.style.color = 'Green';
+            break
+        default:
+            document.getElementById("Erro").innerHTML = 'cor indisponivel.';
+    
+}
+}

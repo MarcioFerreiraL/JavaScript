@@ -15,7 +15,7 @@ button {
 }
 .relogio {
     padding: 10px;
-    margin: auto;
+    margin: 2px auto;
     background-color: #ccc;
     font-size: 2em;
     border-radius: 10px;
@@ -24,10 +24,17 @@ button {
 }
 .relogio:hover {
     padding: 12px;
-    margin: auto;
+    margin: 2px auto;
     background-color: #ccc;
     font-size: 2em;
     border-radius: 10px;
     width: min-content;
     box-shadow: 1px 2px 16px black;
+}
+input {
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: justify;
+    border: 2px solid ;
 }
