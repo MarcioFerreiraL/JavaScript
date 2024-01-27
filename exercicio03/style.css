@@ -13,3 +13,21 @@ button {
     flex-direction: row;
     background-color: #ccc;
 }
+.relogio {
+    padding: 10px;
+    margin: auto;
+    background-color: #ccc;
+    font-size: 2em;
+    border-radius: 10px;
+    width: min-content;
+    box-shadow: 1px 2px 16px black;
+}
+.relogio:hover {
+    padding: 12px;
+    margin: auto;
+    background-color: #ccc;
+    font-size: 2em;
+    border-radius: 10px;
+    width: min-content;
+    box-shadow: 1px 2px 16px black;
+}

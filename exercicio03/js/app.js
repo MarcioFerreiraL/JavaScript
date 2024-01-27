@@ -28,10 +28,23 @@ function normal() {
     button.style.background = '#ccc';
 }
 
-var numeros = [
-    'Roxo',
-    'Preto',
-    'Branco'
-]
-numeros.sort()
-document.getElementById("Text").innerHTML = numeros.join(' - ');
+var hora = new Date().getHours();
+var minuto = new Date().getMinutes();
+var segundos = new Date().getSeconds();
+if (minuto < 10) {
+    minuto = "0" + minuto;
+}
+if (hora < 10) {
+    hora = "0" + hora;
+}
+if (segundos < 10) {
+    segundos = "0" + segundos;
+}
+document.getElementById("Hora").innerHTML = (hora + ":" + minuto + ":" + segundos);
+if (18 > hora > 12) {
+    document.getElementById("Text").innerHTML = 'Bom tarde!';
+} else if (hora > 18 || hora < 6) {
+    document.getElementById("Text").innerHTML = 'Boa noite!';
+} else {
+    document.getElementById("Text").innerHTML = 'Bom dia!';
+}
