@@ -65,7 +65,10 @@ function verificarCor() {
             mexer.style.color = 'Green';
             break
         default:
-            document.getElementById("Erro").innerHTML = 'cor indisponivel.';
+            document.getElementById("Erro").innerHTML = 'Digite alguma coisa';
     
 }
+}
+for (let a = 2024; a >= 1900; a--) {
+    document.getElementById('anos').innerHTML += "<option value='" + a + "'>"+a+"</option>"
 }
