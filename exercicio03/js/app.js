@@ -28,26 +28,26 @@ function normal() {
     button.style.background = '#ccc';
 }
 
-var hora = new Date().getHours();
-var minuto = new Date().getMinutes();
-var segundos = new Date().getSeconds();
-if (minuto < 10) {
-    minuto = "0" + minuto;
+
+
+setInterval(function () {
+    let hora = new Date().getHours();
+    let minuto = new Date().getMinutes();
+    let segundos = new Date().getSeconds();
+    if (minuto < 10) {
+        minuto = "0" + minuto;
+    }
+    if (hora < 10) {
+        hora = "0" + hora;
+    }
+    if (segundos < 10) {
+        segundos = "0" + segundos;
+    }
+    document.getElementById("Hora").innerHTML = (hora + ":" + minuto + ":" + segundos);
 }
-if (hora < 10) {
-    hora = "0" + hora;
-}
-if (segundos < 10) {
-    segundos = "0" + segundos;
-}
-document.getElementById("Hora").innerHTML = (hora + ":" + minuto + ":" + segundos);
-if (18 > hora > 12) {
-    document.getElementById("Text").innerHTML = 'Bom tarde!';
-} else if (hora > 18 || hora < 6) {
-    document.getElementById("Text").innerHTML = 'Boa noite!';
-} else {
-    document.getElementById("Text").innerHTML = 'Bom dia!';
-}
+, 1)
+
+
 function verificarCor() {
     let color = (document.getElementById('cor').value).toLowerCase();
     let mexer = document.getElementById('cor');

@@ -16,19 +16,19 @@ button {
 .relogio {
     padding: 10px;
     margin: 2px auto;
-    background-color: #ccc;
+    background-color: blue;
     font-size: 2em;
     border-radius: 10px;
-    width: min-content;
+    width: 400px;
     box-shadow: 1px 2px 16px black;
 }
 .relogio:hover {
     padding: 12px;
     margin: 2px auto;
-    background-color: #ccc;
+    background-color: blueviolet;
     font-size: 2em;
     border-radius: 10px;
-    width: min-content;
+    width: 400px;
     box-shadow: 1px 2px 16px black;
 }
 input {
