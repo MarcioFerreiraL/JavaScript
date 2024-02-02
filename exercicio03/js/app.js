@@ -72,3 +72,14 @@ function verificarCor() {
 for (let a = 2024; a >= 1900; a--) {
     document.getElementById('anos').innerHTML += "<option value='" + a + "'>"+a+"</option>"
 }
+
+class Usuario {
+    constructor(valor){
+        this.name = valor;
+    }
+}
+
+function perfil() {
+    let nome = document.getElementById('nome').value;
+    alert(nome);
+}
